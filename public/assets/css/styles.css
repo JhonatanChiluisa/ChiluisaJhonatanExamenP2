@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(32, 30, 30);
+}
+section#encabezado{
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y29tcHV0ZXJzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    border-color: rgba(255, 255, 255, 0.658);
+    background-blend-mode:soft-light ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    padding: 0;
+    margin: 0;
+    color:#f1ff5c;
+    font-size: 35px;
+    font-family: 'Akaya Telivigala', cursive;
+    
+}
+h2{
+    padding: 0;
+    margin: 0;
+    color:white;
+    font-size: 60px;
+    font-family: 'Abril Fatface', cursive;
+    
+}
+h1#frase1{
+    padding: 0;
+    margin: 0;
+    color:#f1ff5c;
+    font-size: 35px;
+    font-family: 'Akaya Telivigala', cursive;
+    text-align: center;
+}
+h2#frase2{
+    padding: 0;
+    margin: 0;
+    color:white;
+    font-size: 60px;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+}
+
+
+button{
+    background-color: rgb(41, 27, 167);
+    margin-top: 30px;
+    color: white;
+    border: thick double #ffffff;
+    height: 60px;
+    width: 200px;
+    font-size: 18px;
+    transition: color 0.25 s, tranform 0.25s, border-color 0.25s;
+    font-family: 'Abril Fatface', cursive;
+}
+button:hover{
+    border-color: #f1ff5c;
+    color:#f1ff5c;
+    cursor: pointer;
+    transform: translateY(-0.3em);
+}
+
+section#descripcion{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 20px;
+    
+}
+figure#imgdescrip{
+    border: 5px solid #fff;
+    margin: 40px;
+}
+
+figure#imgdescrip:hover{
+    cursor: pointer;
+    border-radius: 15px;
+    border-color:#f1ff5c;
+    transform: scale(1.05);
+}
+
+
+
+p#acerca{
+    color: gray;
+    font-size: 22px;
+    padding-right: 20px;
+    
+}
+
+p#acerca::first-letter{
+    font-size: 1.5em;
+}
+
+section#productos{
+    background-color:gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 10px;
+}
+p#p{
+    font-size: 18px;
+    padding-right: 20px;
+}
+figcaption{
+    font-size: 18px;
+    margin-left: 40px;
+}
+img#imagen{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    margin:40px;
+}
+section#contacto{
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+p#cont{
+    color: white;
+    font-size: 0.5em;
+}
+
+footer{
+    background-color:gray;
+    padding-top: 60px;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    
+}
+
+p#white{
+    color: white;
+    display: inline;
+    font-size: 20px;
+}
+
+p#green{
+    color: #f1ff5c;
+    display: inline;
+    font-size: 20px;
+}
+img#imdes{
+    width: 450px;
+    
+}
+
+img#imgc{
+    width: 800px;  
+    
+}
+
+
+
+h3{
+    margin-left: 40px;
+}
+
+/*CSS para redes socilaes*/
+.sociales ul{
+    list-style-type: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sociales ul li{
+    display: inline;
+    padding: 1%;
+    
+}
+
+
+/*Media Query*/
+
+@media (max-width: 768px){
+    h2{
+        font-size: 28px;
+    }
+    section#descripcion{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    section#productos{
+        display: flex;
+        flex-direction: column;
+    }
+    img#imdes{
+        width: 400px;
+        height: 300px;
+    }
+}
+
+/*@media (min-width: 768px) and (max-width: 1700px){
+    h2{
+        font-size: 40px;
+    }
+    section#descripcion{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    section#productos{
+        display: flex;
+        flex-direction: column;
+    }
+   
+}*/

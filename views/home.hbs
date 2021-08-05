@@ -1,0 +1,43 @@
+ {{> head }}
+
+
+   {{> navbar }}
+<!--Inicio contenido pagina Home-->
+    <section id="encabezado">
+        <h1 id="frase1">Ordenadores para ti</h1>
+        <h2 id="frase2">Variedad en modelos y precios</h2>
+        <button>EXPLORAR</button>
+    </section>
+
+    <section id="descripcion">
+        <figure id="imgdescrip">
+            <img src="https://images.unsplash.com/photo-1507764923504-cd90bf7da772?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvbXB1dGVyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" id="imdes">
+        </figure>
+        <aside>
+            <h1>A cerca de nosotros</h1>
+            <h2>COMPUMUNDO</h2>
+            <p id="acerca" align="justify">Somos un equipo de trabajo dedicado a la <strong>distribución de computadoras</strong>  tanto de escritorio como laptos. Contamos con un almacén con una gran variedad de marcas, modelos y precios que van de acuardo a sus necesidades. Nuestro compromiso es  <u><em>proporcionarle un equipo que satisfaga sus necesidades</em></u>  y gracias a eso nos ganamos la confianza de nuestros clientes.</p>
+            <button>MÁS INFORMACIÓN</button>
+        </aside>
+    </section>
+
+    <section id="productos">
+        <div>
+            <h1>Revisa</h1>
+            <h2>Nuestros
+                Productos
+            </h2>
+            <p align="justify" id="p">En esta sección se muestra algunos productos que le puede interesar, pero si desea ver más puede ingresar a nuestro inventario para obtener mas información sobre los modelos de computadoras.</p>
+            <button><a href="/inventario">INVENTARIO</a></button>
+        </div>
+      
+        {{#productosCompumundo}}
+        {{/productosCompumundo}}
+
+    </section>
+
+<!--Fin contenido pagina Home-->
+
+   {{> contacto }}
+   {{>sociales}}
+   {{> footer }}
